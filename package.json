@@ -38,7 +38,6 @@
     "lint:style:fix": "prettier --write .",
     "merge-coverage": "cp coverage/ember/coverage-final.json coverage/ember.json && cp coverage/node/coverage-final.json coverage/node.json && nyc merge coverage coverage/coverage-final.json",
     "posttest": "npm run merge-coverage && npm run report-coverage && npm run check-coverage && npm run validate-coverage",
-    "prepare": "husky install",
     "pretest": "npm run clean-coverage",
     "report-coverage": "istanbul report --include=coverage/coverage-final.json text",
     "semantic-release": "semantic-release",
